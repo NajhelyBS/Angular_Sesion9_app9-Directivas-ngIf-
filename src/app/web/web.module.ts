@@ -6,10 +6,12 @@ import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
-    CardComponent
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [
+
+  ],
 })
 export class WebModule { }

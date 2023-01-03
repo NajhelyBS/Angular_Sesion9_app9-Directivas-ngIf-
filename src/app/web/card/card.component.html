@@ -2,13 +2,12 @@
 
 <div class="flex justify-center">  
     <div>
-        <input type="checkbox" name="" id="" class="rounded text-pink-500">
+        <input type="checkbox" name="" class="rounded text-pink-500" (change)="show = !show">
         <label for="" class="bg-red-100">Is active</label>
     </div>
 
 
-
-    <div class="w-60 " *ngIf="show"; else desactivado>
+    <div class="w-60 " *ngIf="show">
         <div id="card" class="bg-blue-300">
             <div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="">
@@ -26,4 +25,4 @@
    <ng-template #desactivado>
     <div><h1>Activa el checkbox para ver el contenido</h1></div>
    </ng-template>
-</div>
+

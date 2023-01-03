@@ -9,5 +9,5 @@ export class CardComponent {
 
   show = false;
 
-
+  hide = false;
 }
