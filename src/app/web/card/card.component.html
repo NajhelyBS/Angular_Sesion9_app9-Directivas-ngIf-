@@ -1,22 +1,23 @@
 <p>card works!</p>
 
-<div class="flex justify-center">  
+<div class="flex justify-center">
     <div>
         <input type="checkbox" name="" class="rounded text-pink-500" (change)="show = !show">
         <label for="" class="bg-red-100">Is active</label>
     </div>
 
 
-    <div class="w-60 " *ngIf="show">
-        <div id="card" class="bg-blue-300">
-            <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="">
+    <div class="w-60 mt-12 " *ngIf="show">
+        <div id="card" class="bg-blue-300 rounded-20">
+            <div class="image flex justify-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+                    alt="imagen">
             </div>
-            <div>
+            <div class="flex justify-center">
                 <h3>Angular</h3>
             </div>
-            <div>
-                <p>Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto,
+            <div class="flex justify-center">
+                <p  class="text-justify" >Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto,
                     mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página.</p>
             </div>
         </div>
