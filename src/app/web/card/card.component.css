@@ -1,3 +1,39 @@
+html{
+    background: #ED4264;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top,#ED4264 , #faeef2);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #ED4264, #faeef2);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 37.3em;
+    
+}
+#card  {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: white;
+  }
+.tittle {
+    font-weight: 700;
+    font-size: 26px;
+    text-shadow: #ed4264a2 0px 0px 5px;
+}
+
+.checkbox {
+    height:20px;
+    width:20px;
+    accent-color:rgb(190, 40, 40);
+    cursor: pointer;
+}
+
+label {
+    text-shadow: #ed4264a2 0px 0px 5px;
+}
 .image {
     width: 100%;
     height: 200px;
@@ -18,4 +54,17 @@
 .image:hover img {
     transform: scale(1.1);
   }
-  
+#tittle {
+    font-weight: 700;
+    padding-top: 12px;
+}
+
+#description {
+    color: black;
+    font-size: 14px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    line-height: normal;
+  }

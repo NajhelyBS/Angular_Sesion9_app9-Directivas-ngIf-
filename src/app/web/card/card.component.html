@@ -1,29 +1,33 @@
-<p>card works!</p>
+<html>
 
-<div class="flex justify-center">
-    <div>
-        <input type="checkbox" name="" class="rounded text-pink-500" (change)="show = !show">
-        <label for="" class="bg-red-100">Is active</label>
-    </div>
+<div class="capitalize text-center pt-8" id="tittle">
+<p class="tittle text-red-500">Sesión 9: directivas_app9 // Najhely Banda</p></div>
+
+<main class="flex justify-center mt-9">
+<div>
+<input type="checkbox" id="checkbox" [(ngModel)]="Checkbox" class="checkbox mt-1"></div>
+<ng-template #disable>
+    <label for="" class="ml-3">Activa el checkbox para ver el contenido</label>
+</ng-template>
 
 
-    <div class="w-60 mt-12 " *ngIf="show">
-        <div id="card" class="bg-blue-300 rounded-20">
-            <div class="image flex justify-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
-                    alt="imagen">
-            </div>
-            <div class="flex justify-center">
-                <h3>Angular</h3>
-            </div>
-            <div class="flex justify-center">
-                <p  class="text-justify" >Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto,
-                    mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página.</p>
-            </div>
+<div *ngIf="Checkbox; else disable">
+    <label for="" class="ml-3">Is active </label>
+    
+    <div class="w-60 mt-4">
+    <div id="card" class=" rounded">
+        <div class="image flex justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+                alt="imagen">
         </div>
+        
+        <div class="flex justify-center">
+            <h3 id="tittle">Angular</h3>
+        </div>
+            <p  class="text-justify" id="description">Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto,
+                mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página.</p>
     </div>
+</div></div>
 
-   <ng-template #desactivado>
-    <div><h1>Activa el checkbox para ver el contenido</h1></div>
-   </ng-template>
-
+</main>
+</html>
