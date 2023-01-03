@@ -1,0 +1,9 @@
+/* Style the image container */
+.image {
+    width: 100%;
+    height: 200px;
+    background-color: #555;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: relative;
+  }
